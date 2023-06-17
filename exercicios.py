@@ -3,7 +3,7 @@ import sys
 
 def menu_selecao():
     print(" ")
-    print("Menu de seleção, por favor escola umas das opções abaixo")
+    print("Menu de seleção, por favor escolha umas das opções abaixo")
     print("1 = Par ou Impar?")
     print("2 = Fazer uma soma")
     print("3 = Fazer uma média de 4 notas: ")
@@ -12,10 +12,8 @@ def menu_selecao():
 
 def selecao():
     opcoes_validas = [1, 2, 3, 4]
-    
     while True:
         selecao = int(input("Qual opção você escolhe? "))
-        
         if selecao in opcoes_validas:
             if selecao == 1:
                 escolha_um_numero()
@@ -32,8 +30,6 @@ def selecao():
             tempo_espera()
             menu_selecao()
 
-#
-
 def saudacao():
     print("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=")
     print("Olá mundo, meu nome é Roberto")
@@ -46,12 +42,10 @@ def escolha_um_numero():
         print("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=")
         print(f"O seu número escolhido {escolha} é par.")
         print("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=")
-
     else:
         print("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=")
         print(f"O seu número escolhido {escolha} é ímpar.")
         print("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=")
-
     menu_selecao()
     selecao()
 
@@ -66,7 +60,6 @@ def soma():
     print(f"A soma de {x} + {y} é igual a {resultado}")
     print("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-")
     print("")
-
     menu_selecao()
     selecao()
 
@@ -76,7 +69,6 @@ def media():
     print("Aqui vamos fazer uma média de 4 notas")
     print("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=")
     print("")
-
     nota1 = float(input("Coloque a nota 1 aqui =>>  "))
     nota2 = float(input("Coloque a nota 2 aqui =>>  "))
     nota3 = float(input("Coloque a nota 3 aqui =>>  "))
@@ -86,7 +78,6 @@ def media():
     print("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=")
     print(f"O resultado das média é de =>> {media}")
     print("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=")
-
     menu_selecao()
     selecao()
 
