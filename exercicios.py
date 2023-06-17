@@ -31,9 +31,9 @@ def selecao():
             menu_selecao()
 
 def saudacao():
-    print("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=")
+    print("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=")
     print("Olá mundo, meu nome é Roberto")
-    print("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=")
+    print("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=")
 
 def escolha_um_numero():
     escolha = int(input("coloque um numero =>> "))
